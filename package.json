@@ -1,0 +1,11 @@
+{
+  "name": "dokea_website",
+  "version": "1.0.0",
+  "description": "Website for Dokea Meats, a product by All American Meat Exporters LLC",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hasan Khalid",
+  "license": "ISC"
+}
