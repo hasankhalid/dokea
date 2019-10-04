@@ -1,0 +1,921 @@
+html, body {
+  margin: 0px;
+  font-family: 'Lato', sans-serif;
+}
+
+/** Font Size and Weight Classes **/
+
+.twelve {
+  font-size: 12px;
+  margin: 5px 0px;
+}
+
+.fourteen {
+  font-size: 14px;
+  margin: 5px 0px;
+}
+
+.sixteen {
+  font-size: 16px;
+  margin: 8px 0px;
+}
+
+.eighteen {
+  font-size: 18px;
+  margin: 10px 0px;
+}
+
+.twenty {
+  font-size: 20px;
+  margin: 8px 0px;
+}
+
+.twentytwo {
+  font-size: 22px;
+  margin: 8px 0px;
+}
+
+.twentyfour {
+  font-size: 24px;
+  margin: 10px 0px;
+}
+
+.twentysix {
+  font-size: 26px;
+  margin: 10px 0px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.light {
+  font-weight: 300;
+}
+
+
+/** General Styles **/
+
+.content_container {
+  margin: 0px 80px;
+}
+
+.underlined {
+  border-bottom: 1px solid;
+}
+
+.dokea_home {
+  cursor: pointer;
+}
+
+/** Landing Styles **/
+
+.landing {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+#landing_background_image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+}
+
+#landing_color_overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right top, #3f3f3f, #363636, #2d2d2d, #242424, #1c1c1c);
+  background-image: linear-gradient(to right bottom, #3c3b6e, #623671, #852a68, #a21e52, #b22234);
+  background-image: linear-gradient(to right bottom, #e91e63, #dc1f56, #ce204a, #c0213e, #b22234);
+  z-index: 2;
+}
+
+#landing_content {
+  position: relative;
+  z-index: 3;
+  height: 100%;
+}
+
+#landing_banner_body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.banner_text_container {
+  position: absolute;
+  left: 0;
+  margin-left: 100px;
+  width: 50%;
+  color: #fff;
+  z-index: 10;
+}
+
+.banner_text {
+  font-size: 60px;
+  margin: 18px 0px;
+}
+
+.banner_sub {
+  width: 60%;
+}
+
+.banner_photo_container {
+  position: absolute;
+  right: 0;
+  margin-right: 100px;
+  height: 475px;
+  width: 60%;
+  border-radius: 15px;
+  overflow: hidden;
+  -webkit-box-shadow: 17px 21px 38px -16px rgba(0,0,0,0.5);
+  box-shadow: 17px 21px 38px -16px rgba(0,0,0,0.5);
+}
+
+.loader_background {
+  width: 100%;
+  height: 6px;
+  background-color: #CFD8DC;
+  position: absolute;
+  bottom: 0;
+  z-index: 5;
+}
+
+.image_loader {
+  width: 100%;
+  height: 6px;
+  background-color: #6a1b9a;
+  position: absolute;
+  bottom: 0;
+  -moz-animation: fullexpand 50s linear infinite;
+  -webkit-animation: fullexpand 50s linear infinite;
+  z-index: 5;
+}
+
+.overlay_tint {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  background-image: linear-gradient(to right top, #212121, #292733, #302e46, #36345a, #3c3b6e);
+  opacity: 0.25;
+}
+
+.banner_image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+#banner1 {
+  background-image: url("./resources/landing_background_image.png");
+  background-position: center;
+  -moz-animation: cycle 50s linear infinite;
+  -webkit-animation: cycle 50s linear infinite;
+}
+
+
+#banner2 {
+  background-image: url("./resources/background_two.jpg");
+  background-position: left;
+  -moz-animation: cycletwo 50s linear infinite;
+  -webkit-animation: cycletwo 50s linear infinite;
+}
+
+#banner3 {
+  background-image: url("./resources/background_three.jpeg");
+  background-position: left;
+  -moz-animation: cyclethree 50s linear infinite;
+  -webkit-animation: cyclethree 50s linear infinite;
+}
+
+#banner4 {
+  background-image: url("./resources/background_four.jpg");
+  background-position: left;
+  -moz-animation: cyclefour 50s linear infinite;
+  -webkit-animation: cyclefour 50s linear infinite;
+}
+
+#banner5 {
+  background-image: url("./resources/background_five.jpg");
+  background-position: left;
+  -moz-animation: cyclefive 50s linear infinite;
+  -webkit-animation: cyclefive 50s linear infinite;
+}
+
+.landing_scroll_guider {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding: 20px 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dokea_description_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dokea_cottage {
+  width: 145px;
+  margin-left: 10px;
+}
+
+
+.dokea_features {
+  display: flex;
+  margin-top: 40px;
+}
+
+.dokea_feature {
+  margin-right: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature_icon {
+  width: 40px;
+  margin-bottom: 5px;
+}
+
+.expansion_heading {
+  font-size: 36px;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+.smaller_paragraph {
+  width: 70%;
+}
+
+.new_dokea_products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dokea_product {
+  width: 22%;
+  padding-right: 3%;
+}
+
+.dokea_product_icon {
+  width: 95%;
+  border-radius: 15px;
+  padding: 2.5%;
+  border: 1px solid;
+  border-color: #e0e0e0;
+}
+
+.for_product_details {
+  padding: 10px 5px;
+  background: #3C3B6E;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+/** Navbar Styles **/
+
+.nav_bar {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  z-index: 100;
+}
+
+#dokea_nav {
+  width: 110px;
+}
+
+#menu_icon, #close_icon {
+  width: 25px;
+  cursor: pointer;
+}
+
+
+/** Overlay Menu Styling **/
+
+#overlay_menu {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to right top, #3c3b6e, #623671, #852a68, #a21e52, #b22234);
+}
+
+.nav_section {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nav_link_section {
+  display: flex;
+}
+
+.nav_link {
+  text-decoration: none;
+  margin-right: 100px;
+}
+
+.link_text {
+  transition: 0.5s ease-in-out;
+  display: none;
+}
+
+.link_text:hover {
+  color: #ffee58;
+}
+
+.logos_section {
+  display: flex;
+  padding-bottom: 10px;
+}
+
+.overlay_contact_section {
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+  display: none;
+}
+
+.overlay_dokea {
+  margin-right: 200px;
+}
+
+/** Color styles **/
+
+.yellow {
+  color: #ffee58;
+}
+
+.faded_yellow {
+  color: #fff59d;
+}
+
+.white {
+  color: #fff;
+}
+
+.blue {
+  color: #3c3b6e;
+}
+
+.red {
+  color: #B22234;
+}
+
+
+/** Page styles **/
+
+.page_section {
+  width: 100%;
+  height: 220px;
+  position: relative;
+}
+
+.page_heading_container {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.increased_margin {
+  margin: 30px 40px;
+}
+
+.section_heading {
+  margin-bottom: 30px;
+}
+
+
+/** AAME PAGE STYLES **/
+
+.about_aame {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#aam_about_logo {
+  width: 100px;
+  border: 1px solid;
+  border-color: #bdbdbd;
+  border-radius: 7px;
+}
+
+.aame_description {
+  margin-left: 20px;
+}
+
+.local_markets {
+  font-size: 30px;
+}
+
+.we_are_global, .local_markets {
+  margin-top: 60px;
+}
+
+.map_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px 0px;
+}
+
+/** Philosophy PAGE STYLES **/
+
+.mission_values_container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.mission_container {
+  width: 100%;
+  background: #eee;
+  background-image: linear-gradient(to right top, #eeeeee, #eeecf1, #eeeaf3, #f0e8f4, #f3e5f5);
+  padding: 30px;
+  display: flex;
+  border-radius: 25px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 0px;
+  box-sizing: border-box;
+}
+
+.mission {
+  width: 35%;
+}
+
+.background_mission {
+  width: 60%;
+  border-radius: 10px;
+}
+
+.values_container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.value {
+  width: 30%;
+  margin-right: 3%;
+}
+
+.value_icon {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.heading_bar {
+  width: 50px;
+  height: 5px;
+  background: #3c3b6e;
+  border-radius: 20px;
+}
+
+/** Footer Styling **/
+
+.footer {
+  position: relative;
+  margin-top: 50px;
+  padding: 50px 0px;
+  background-image: linear-gradient(to right top, #3c3b6e, #583872, #74316e, #8e2763, #a21e52);
+  background-image: linear-gradient(to right top, #3c3b6e, #513971, #673571, #7b2e6c, #8e2763);
+}
+
+#footer_steak {
+  position: absolute;
+  width: 140px;
+  top: 20px;
+  right: 100px;
+  z-index: 10;
+  transform: rotate(40deg);
+}
+
+.footer_margined_section {
+  margin-bottom: 30px;
+}
+
+.footer_logos_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0px;
+}
+
+#dokea_footer {
+  width: 110px;
+}
+
+#aam_footer {
+  width: 60px;
+}
+
+@media only screen and (max-width: 680px) {
+  #footer_steak {
+    display: none;
+  }
+}
+
+/** Media Queries **/
+
+@media only screen and (max-width: 1300px) {
+  .for_product_details {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .banner_text {
+    font-size: 52px;
+  }
+  .banner_sub {
+    font-size: 14px;
+  }
+  .dokea_product {
+    width: 31%;
+    margin-right: 2%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .increased_margin {
+    margin: 10px 20px;
+  }
+  .content_container {
+    margin: 0px 60px;
+  }
+
+  .twentysix {
+    font-size: 24px;
+  }
+
+  .twentyfour {
+    font-size: 22px;
+  }
+
+  .twentytwo {
+    font-size: 20px;
+  }
+  .twenty {
+    font-size: 18px;
+  }
+  .eighteen {
+    font-size: 16px;
+  }
+  .sixteen {
+    font-size: 14px;
+  }
+  .fourteen {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .banner_text_container {
+    margin-left: 30px;
+  }
+  .banner_photo_container {
+    margin-right: 30px;
+    height: 450px;
+  }
+  .banner_text {
+    font-size: 44px;
+  }
+  .banner_sub {
+    font-size: 14px;
+  }
+  .dokea_product {
+    width: 44%;
+    margin-right: 2%;
+  }
+  .mission_container {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  #mission_container {
+    flex-direction: column-reverse;
+  }
+  .mission {
+    width: 100%;
+  }
+  .background_mission {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #landing_banner_body {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .banner_text_container, .banner_photo_container {
+    position: relative;
+  }
+  .banner_text_container {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .banner_text {
+    font-size: 34px;
+  }
+  .banner_photo_container {
+    width: 80%;
+    height: 250px;
+  }
+  .landing_scroll_guider {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .dokea_cottage {
+    width: 95px;
+  }
+  .increased_margin {
+    margin: 10px 10px;
+  }
+  .content_container {
+    margin: 0px 30px;
+  }
+  .value {
+    width: 47%;
+  }
+  .nav_link_section {
+    flex-direction: column;
+  }
+  .logos_section {
+    flex-direction: column;
+  }
+  .twentysix {
+    font-size: 22px;
+  }
+
+  .twentyfour {
+    font-size: 20px;
+  }
+
+  .twentytwo {
+    font-size: 18px;
+  }
+  .twenty {
+    font-size: 16px;
+  }
+  .eighteen {
+    font-size: 14px;
+  }
+  .sixteen {
+    font-size: 13px;
+  }
+  .fourteen {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .overlay_dokea {
+    margin-right: 0px;
+  }
+  .dokea_product {
+    width: 100%;
+    margin-right: 0%;
+  }
+  .for_product_details {
+    font-size: 14px;
+  }
+  .mission_container {
+    padding: 18px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .content_container {
+    margin: 0px 20px;
+  }
+  .increased_margin {
+    margin: 10px 0px;
+  }
+  .banner_text {
+    font-size: 26px;
+  }
+  .banner_sub {
+    width: 100%;
+  }
+  .banner_photo_container {
+    width: 100%;
+    height: 225px;
+  }
+  .dokea_description_container {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .dokea_cottage {
+    margin-right: 0px;
+    width: 60px;
+  }
+  .feature_icon {
+    width: 25px;
+  }
+  .dokea_feature {
+    margin-right: 10px;
+  }
+  .background_mission {
+    width: 100%;
+  }
+  .value {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .about_aame {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .aame_description {
+    margin-left: 0px;
+    margin-bottom: 20px;
+    margin-top: -10px;
+  }
+  .mission_container {
+    padding: 15px;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .banner_text {
+    font-size: 22px;
+  }
+  .banner_sub {
+    width: 100%;
+  }
+  .banner_photo_container {
+    width: 100%;
+    height: 150px;
+  }
+  .twentysix {
+    font-size: 20px;
+  }
+
+  .twentyfour {
+    font-size: 18px;
+  }
+
+  .twentytwo {
+    font-size: 16px;
+  }
+  .twenty {
+    font-size: 14px;
+  }
+  .eighteen {
+    font-size: 12px;
+  }
+  .sixteen {
+    font-size: 12px;
+  }
+  .fourteen {
+    font-size: 11px;
+  }
+  #dokea_aam {
+    display: none;
+  }
+}
+
+/** Animation Code **/
+
+@-moz-keyframes fullexpand {
+    0%, 20%, 40%, 60%, 80%, 100% { width:0%; opacity: 0; }
+    4%, 24%, 44%, 64%, 84% { width:0%; opacity:0.9; }
+   16%, 36%, 56%, 76%, 96% { width:100%; opacity:0.9; }
+   17%, 37%, 57%, 77%, 97% { width:100%; opacity:0.3; }
+   18%, 38%, 58%, 78%, 98% { width:100%; opacity:0; }
+}
+@-webkit-keyframes fullexpand {
+    0%, 20%, 40%, 60%, 80%, 100% { width:0%; opacity:0; }
+    4%, 24%, 44%, 64%, 84% { width:0%; opacity:0.9; }
+   16%, 36%, 56%, 76%, 96% { width:100%; opacity:0.9; }
+   17%, 37%, 57%, 77%, 97% { width:100%; opacity:0.3; }
+   18%, 38%, 58%, 78%, 98% { width:100%; opacity:0; }
+}
+
+@-webkit-keyframes cycle {
+
+	16% { opacity:1; z-index:0; }
+	20% { opacity:0; z-index:0; }
+	21% { opacity:0; z-index:-1; }
+	50% { opacity:0; z-index:-1; }
+	92% { opacity:0; z-index:0; }
+	96% { opacity:0; }
+	100%{ opacity:1; }
+
+}
+
+@-moz-keyframes cycletwo {
+	0%  { opacity:0; }
+	16% { opacity:0; }
+	20% { opacity:1; }
+	24% { opacity:1; }
+	36% { opacity:1; z-index:0; }
+	40% { opacity:0; z-index:0; }
+	41% { opacity:0; z-index:-1; }
+	100%{ opacity:0; z-index:-1; }
+}
+
+@-webkit-keyframes cycletwo {
+	0%  { opacity:0; }
+	16% { opacity:0; }
+	20% { opacity:1; }
+	24% { opacity:1; }
+	36% { opacity:1; z-index:0; }
+	40% { opacity:0; z-index:0; }
+	41% { opacity:0; z-index:-1; }
+	100%{ opacity:0; z-index:-1; }
+}
+
+@-moz-keyframes cyclethree {
+	0%  { opacity:0; }
+	36% { opacity:0; }
+	40% { opacity:1; }
+	44% { opacity:1; }
+	56% { opacity:1; }
+	60% { opacity:0; z-index:0; }
+	61% { opacity:0; z-index:-1; }
+	100%{ opacity:0; z-index:-1; }
+}
+
+@-moz-keyframes cyclefour {
+	0%  { opacity:0; }
+	56% { opacity:0; }
+	60% { opacity:1; }
+	64% { opacity:1; }
+	76% { opacity:1; z-index:0; }
+	80% { opacity:0; z-index:0; }
+	81% { opacity:0; z-index:-1; }
+	100%{ opacity:0; z-index:-1; }
+}
+
+@-moz-keyframes cyclefive {
+	0%  { opacity:0; }
+	76% { opacity:0; }
+	80% { opacity:1; }
+	84% { opacity:1; }
+	96% { opacity:1; z-index:0; }
+	100%{ opacity:0; z-index:0; }
+}
+
+@-webkit-keyframes cyclethree {
+	0%  { opacity:0; }
+	36% { opacity:0; }
+	40% { opacity:1; }
+	44% { opacity:1; }
+	56% { opacity:1; z-index:0; }
+	60% { opacity:0; z-index:0; }
+	61% { opacity:0; z-index:-1; }
+	100%{ opacity:0; z-index:-1; }
+}
+
+@-webkit-keyframes cyclefour {
+	0%  { opacity:0; }
+	56% { opacity:0; }
+	60% { opacity:1; }
+	64% { opacity:1; }
+	76% { opacity:1; z-index:0; }
+	80% { opacity:0; z-index:0; }
+	81% { opacity:0; z-index:-1; }
+	100%{ opacity:0; z-index:-1; }
+}
+
+@-webkit-keyframes cyclefive {
+	0%  { opacity:0; }
+	76% { opacity:0; }
+	80% { opacity:1; }
+	84% { opacity:1; }
+	96% { opacity:1; z-index:0; }
+	100%{ opacity:0; z-index:0; }
+}
