@@ -29,6 +29,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="./index.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   </head>
 
   <body>
@@ -92,18 +95,18 @@
             <div class="mission_values_container">
               <div class="mission_container" id="mission_container">
                 <div class="mission">
-                  <p class="twentysix bold red">Our mission</p>
+                  <p class="twentysix bold red" data-aos="fade-in" data-aos-delay="200">Our mission</p>
                   <div class="heading_bar section_heading"></div>
-                  <p class="eighteen blue">Our mission is to provide the most efficient and competitive supply chain solutions for our customers and suppliers worldwide as a unified & multi-cultural team</p>
+                  <p class="eighteen blue" data-aos="fade-in" data-aos-delay="400">Our mission is to provide the most efficient and competitive supply chain solutions for our customers and suppliers worldwide as a unified & multi-cultural team</p>
                 </div>
                 <img class="background_mission" src="./resources/cattle.jpg"></img>
               </div>
               <div class="mission_container">
                 <img class="background_mission" src="./resources/steak.jpg"></img>
                 <div class="mission">
-                  <p class="twentysix bold red">Our Vision</p>
+                  <p class="twentysix bold red" data-aos="fade-in" data-aos-delay="200">Our Vision</p>
                   <div class="heading_bar section_heading"></div>
-                  <p class="eighteen blue">We are the undisputed leading marketer of proteins produced around the globe, driven by a seamless international network of the most talented professionals in our industry.
+                  <p class="eighteen blue" data-aos="fade-in" data-aos-delay="400">We are the undisputed leading marketer of proteins produced around the globe, driven by a seamless international network of the most talented professionals in our industry.
                       Our success is defined by the quality and scope of our customer and supplier relationships, our product and market knowledge, the ability to build long-term value with proprietary food products and services, and the efficiencies we achieve throughout the value chain of global food distribution.
                       We are one team with one vision.
                       We are All American Meat exporter.
@@ -178,6 +181,8 @@
     </div>
 
     <script>
+      AOS.init();
+
       $(".dokea_home").click(function() {
         window.location = "./index.html";
       });

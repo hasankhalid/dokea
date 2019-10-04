@@ -29,6 +29,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="./index.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   </head>
 
   <body>
@@ -95,7 +98,7 @@
             </div>
 
             <div class="local_markets">
-              <p class="section_heading"><span style="color: #3C3B6E; border-bottom: 4px solid; border-color: #B22234;">In our global setup</span>, <span class="bold" style="color: #B22234; border-bottom: 4px solid; border-color: #3C3B6E;">We focus on local markets</p>
+              <p class="section_heading"><span data-aos="zoom-in" data-aos-delay="750" class="section_heading" style="color: #3C3B6E; border-bottom: 4px solid; border-color: #B22234;">In our global setup</span>, <span data-aos="zoom-in" data-aos-delay="1500"  class="bold" style="color: #B22234; border-bottom: 4px solid; border-color: #3C3B6E;">We focus on local markets</span></p>
                 <p class="sixteen">We protect and promote our clients' interests by watching market trends, sharing market knowledge and proactively responding to changing circumstances. And while our network is global, our focus is local. We expanded our network from 2 offices in 2001 to 10 in 2019 while growing our team to over 180 people with extraordinary diversity and talent. We are fluent in local cultures, customs, and currencies. Our multilingual team is sensitive to different ways of doing business. At All American Meat exporter, we know what is most important to our suppliers and customers in their own markets. With these specific requirements in mind, we work to fulfill their needs.</p>
                 <p class="eighteen">Here at All American Meat exporter for over 18 years, we have focused on one goal - building our clients' success and profitability.</p>
              </div>
@@ -141,6 +144,8 @@
     </div>
 
     <script>
+      AOS.init();
+
       $(".dokea_home").click(function() {
         window.location = "./index.html";
       });

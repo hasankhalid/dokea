@@ -29,6 +29,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="./index.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   </head>
 
   <body>
@@ -119,19 +122,19 @@
               <div class="dokea_features_container">
                 <p class="sixteen">Dokea means from the hamlets in Punjabi, hamlet being a symbol of purity and quality in Punjabi culture. Our Brand ‘Dokea’ connects organic meat producers from the hamlets of Pakistan to consumer markets across the globe. Upholding the values of freshness, purity and quality of our villages, Dokea provides an array of safe, healthy and Halal meat products to our customers across the world.</p>
                 <div class="dokea_features">
-                  <div class="dokea_feature">
+                  <div class="dokea_feature" data-aos="zoom-in">
                     <img class="feature_icon" src="./resources/organic.png"></img>
                     <p class="fourteen blue bold">Organically raised</p>
                   </div>
-                  <div class="dokea_feature">
+                  <div class="dokea_feature" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="700">
                     <img class="feature_icon" src="./resources/hormonefree.png"></img>
                     <p class="fourteen red bold">Hormone Free</p>
                   </div>
-                  <div class="dokea_feature">
+                  <div class="dokea_feature" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="700">
                     <img class="feature_icon" src="./resources/sprout.png"></img>
                     <p class="fourteen blue bold">Natural & Healthy</p>
                   </div>
-                  <div class="dokea_feature">
+                  <div class="dokea_feature" data-aos="zoom-in" data-aos-delay="150" data-aos-duration="700">
                     <img class="feature_icon" src="./resources/halal.png"></img>
                     <p class="fourteen red bold">Halal</p>
                   </div>
@@ -146,13 +149,13 @@
             <p class="twenty blue section_heading">Introducing</p>
 
             <div class="new_dokea_products">
-              <div class="dokea_product">
+              <div class="dokea_product" data-aos="fade-in" data-aos-duration="1000">
                 <img class="dokea_product_icon" src="./resources/rice.jpg"></img>
                 <p class="sixteen bold blue">Dokea Rice</p>
                 <p class="fourteen red">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                 <p class="fourteen for_product_details faded_yellow">For details email <span class="bold yellow">sales@americanmeatexporters.com</span></p>
               </div>
-              <div class="dokea_product">
+              <div class="dokea_product" data-aos="fade-in" data-aos-duration="1000">
                 <img class="dokea_product_icon" src="./resources/vegetables.jpg"></img>
                 <p class="sixteen bold blue">Dokea Organic Vegetables</p>
                 <p class="fourteen red">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
@@ -196,6 +199,8 @@
     </div>
 
     <script>
+      AOS.init();
+
       $(".dokea_home").click(function() {
         window.location = "./index.html";
       });
