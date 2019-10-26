@@ -117,7 +117,7 @@ html, body {
 }
 
 .banner_text {
-  font-size: 60px;
+  font-size: 58px;
   margin: 18px 0px;
 }
 
@@ -174,7 +174,7 @@ html, body {
 }
 
 #banner1 {
-  background-image: url("./resources/landing_background_image.jpeg");
+  background-image: url("./resources/landing_background_image.jpg");
   background-position: center;
   -moz-animation: cycle 50s linear infinite;
   -webkit-animation: cycle 50s linear infinite;
@@ -196,14 +196,14 @@ html, body {
 }
 
 #banner4 {
-  background-image: url("./resources/background_four.jpg");
+  background-image: url("./resources/background_four.jpeg");
   background-position: left;
   -moz-animation: cyclefour 50s linear infinite;
   -webkit-animation: cyclefour 50s linear infinite;
 }
 
 #banner5 {
-  background-image: url("./resources/background_five.jpeg");
+  background-image: url("./resources/background_five.jpg");
   background-position: left;
   -moz-animation: cyclefive 50s linear infinite;
   -webkit-animation: cyclefive 50s linear infinite;
