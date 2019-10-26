@@ -174,7 +174,7 @@ html, body {
 }
 
 #banner1 {
-  background-image: url("./resources/landing_background_image.png");
+  background-image: url("./resources/landing_background_image.jpeg");
   background-position: center;
   -moz-animation: cycle 50s linear infinite;
   -webkit-animation: cycle 50s linear infinite;
@@ -203,7 +203,7 @@ html, body {
 }
 
 #banner5 {
-  background-image: url("./resources/background_five.jpg");
+  background-image: url("./resources/background_five.jpeg");
   background-position: left;
   -moz-animation: cyclefive 50s linear infinite;
   -webkit-animation: cyclefive 50s linear infinite;
